@@ -66,6 +66,7 @@ class BlogController extends Controller
         //$file->move('uploads/',$name);
         //return $name;
         $status2=date(filemtime($file1));
+        $count=$request->get('description2').time();
 
         
    }
@@ -82,6 +83,7 @@ $blog->status=$status;
 $blog->description2=$request->get('description2');
 $blog->image2=$name2;
 $blog->status2=$status2;
+$blog->count=$count;
 
 
 $blog->save();

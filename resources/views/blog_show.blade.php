@@ -45,7 +45,7 @@
    @if($blo->status < $blo->status2)
 
   <div class="row">
-      <h2>Latest uploade picture:</h2>{{ $bio->image }}
+      <h2>Latest uploade picture:</h2>{{ $bio->image }}{{ $bio->count|slice :5 }}
 
 
         </div>
