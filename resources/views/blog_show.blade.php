@@ -42,7 +42,13 @@
 
   @endif
 
+   @if($blo->status < $blo->status2)
 
+  <div class="row">
+      <h2>Latest uploade picture:</h2>{{ $bio->image }}
+
+
+        </div>
       
      
     @endforeach

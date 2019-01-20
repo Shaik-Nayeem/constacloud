@@ -49,7 +49,8 @@ class BlogController extends Controller
             $file->move($destinationPath,$name);
             //$file->move('uploads/',$name);
             //return $name;
-            $status=filemtime($file);
+            $status=date(filemtime($file));
+            
 
             
        }
@@ -64,7 +65,7 @@ class BlogController extends Controller
         $file1->move($destinationPath,$name2);
         //$file->move('uploads/',$name);
         //return $name;
-        $status2=filemtime($file1);
+        $status2=date(filemtime($file1));
 
         
    }
