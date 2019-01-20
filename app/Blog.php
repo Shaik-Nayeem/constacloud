@@ -9,6 +9,6 @@ class Blog extends Model
     protected $table="blog";
 
     protected $fillable = [
-        'description','image','description2','image2','status','status2'
+        'description','image','description2','image2','status','status2','count'
     ];
 }
